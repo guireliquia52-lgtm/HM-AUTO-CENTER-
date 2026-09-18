@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HM Auto Center | Oficina Automotiva</title>
+<meta name="description" content="HM Auto Center em Mário Campos - MG. Auto elétrica e mecânica automotiva.">
+<style>
+:root{--red:#e50914;--red2:#ff3131;--bg:#070707;--card:#121212;--line:#292929;--muted:#a9a9a9}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:#fff}
+a{text-decoration:none;color:inherit}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(7,7,7,.88);backdrop-filter:blur(12px);border-bottom:1px solid #222}
+.navin{max-width:1180px;margin:auto;height:74px;padding:0 22px;display:flex;align-items:center;justify-content:space-between}
+.navlogo{height:54px;width:150px;object-fit:contain}
+.links{display:flex;gap:25px;font-size:14px;font-weight:700}.links a:hover{color:var(--red)}
+.menu{display:none;font-size:25px}
+.hero{min-height:100vh;padding:130px 22px 70px;display:flex;align-items:center;position:relative;overflow:hidden;
+background:radial-gradient(circle at 80% 35%,#501010 0,transparent 35%),linear-gradient(120deg,#070707 45%,#151515)}
+.hero:after{content:"";position:absolute;width:480px;height:480px;border:1px solid #4b1616;border-radius:50%;right:-120px;bottom:-160px}
+.heroin{max-width:1180px;width:100%;margin:auto;position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:35px;align-items:center}
+.eyebrow{color:#ff4545;text-transform:uppercase;font-size:13px;letter-spacing:3px;font-weight:900;margin-bottom:15px}
+h1{font-size:clamp(3rem,7vw,6.5rem);line-height:.92;text-transform:uppercase;font-weight:950}
+h1 span{color:var(--red)}
+.hero p{font-size:19px;color:#c7c7c7;max-width:590px;margin:25px 0 30px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:15px 21px;border-radius:8px;font-weight:900;display:inline-flex;align-items:center;gap:9px;border:1px solid transparent}
+.btn.red{background:var(--red)}.btn.red:hover{background:var(--red2)}
+.btn.out{border-color:#555;background:#111}.btn.out:hover{border-color:#fff}
+.hero-logo{width:min(520px,100%);max-height:430px;object-fit:contain;filter:drop-shadow(0 20px 30px #000)}
+section{padding:90px 22px}.container{max-width:1180px;margin:auto}
+.sectiontag{color:var(--red);font-weight:900;letter-spacing:2px;text-transform:uppercase;font-size:12px}
+h2{font-size:clamp(2rem,4vw,3.4rem);margin:8px 0 35px;text-transform:uppercase}
+h2 span{color:var(--red)}
+.services{background:#0d0d0d}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}
+.card{background:linear-gradient(145deg,#171717,#0f0f0f);border:1px solid var(--line);padding:28px;border-radius:15px;min-height:190px;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:#6c1a1a}
+.ico{font-size:31px;margin-bottom:18px}.card h3{font-size:19px;margin-bottom:9px}.card p{color:var(--muted);font-size:14px}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}
+.panel{background:#111;border:1px solid var(--line);border-radius:18px;padding:35px}
+.panel .big{font-size:54px;font-weight:950;color:var(--red)}.panel p{color:#bbb;margin-top:8px}
+.aboutcopy p{color:#b9b9b9;font-size:17px;line-height:1.8;margin-bottom:20px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;color:#ddd;font-weight:700}.checks div:before{content:"✓";color:var(--red);margin-right:9px}
+.contact{background:linear-gradient(135deg,#170707,#090909);border-top:1px solid #321010}
+.contactgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.contactbox{border:1px solid #3a2020;background:#101010;border-radius:15px;padding:28px}.contactbox small{color:#e34b4b;text-transform:uppercase;font-weight:900}.contactbox h3{margin:8px 0}.contactbox a{font-size:18px;font-weight:900}.contactbox p{color:#bbb}
+footer{border-top:1px solid #222;padding:28px 22px;text-align:center;color:#777;font-size:13px}
+.float{position:fixed;right:20px;bottom:20px;z-index:30;background:#20b957;color:white;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:27px;box-shadow:0 10px 30px #000}
+@media(max-width:850px){.links{display:none}.menu{display:block}.heroin{grid-template-columns:1fr;text-align:center}.hero p{margin-left:auto;margin-right:auto}.ctas{justify-content:center}.hero-logo{max-width:380px;margin:auto}.grid{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr}.contactgrid{grid-template-columns:1fr}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.checks{grid-template-columns:1fr}section{padding:65px 18px}.navin{padding:0 14px}.navlogo{width:125px}}
+</style>
+</head>
+<body>
+
+<nav><div class="navin">
+<img src="logo.png" class="navlogo" alt="HM Auto Center">
+<div class="links"><a href="#servicos">Serviços</a><a href="#empresa">A oficina</a><a href="#contato">Contato</a></div>
+<div class="menu">☰</div>
+</div></nav>
+
+<header class="hero">
+<div class="heroin">
+<div>
+<div class="eyebrow">Mário Campos • Minas Gerais</div>
+<h1>HM <span>Auto</span><br>Center</h1>
+<p>Auto elétrica e mecânica automotiva com atendimento profissional para manter seu carro seguro, funcionando e pronto para a estrada.</p>
+<div class="ctas">
+<a class="btn red" href="https://wa.me/5531997741155" target="_blank">⚡ Falar com Hernandes</a>
+<a class="btn out" href="https://wa.me/5531984652034" target="_blank">🔧 Falar com Mateus</a>
+</div>
+</div>
+<img src="logo.png" class="hero-logo" alt="Logo HM Auto Center">
+</div>
+</header>
+
+<section id="servicos" class="services"><div class="container">
+<div class="sectiontag">O que fazemos</div><h2>Serviços <span>automotivos</span></h2>
+<div class="grid">
+<div class="card"><div class="ico">🔋</div><h3>Auto Elétrica</h3><p>Sistemas elétricos, bateria e manutenção elétrica.</p></div>
+<div class="card"><div class="ico">⚡</div><h3>Motor de Partida</h3><p>Manutenção e reparos no sistema de partida.</p></div>
+<div class="card"><div class="ico">⚙️</div><h3>Alternador</h3><p>Serviços no sistema de carga e alternador.</p></div>
+<div class="card"><div class="ico">🔧</div><h3>Mecânica Geral</h3><p>Manutenção preventiva e corretiva do veículo.</p></div>
+</div>
+</div></section>
+
+<section id="empresa"><div class="container about">
+<div class="panel"><div class="big">2</div><p>profissionais especializados</p><hr style="border:0;border-top:1px solid #292929;margin:25px 0"><div class="big">1</div><p>oficina para cuidar do seu carro</p></div>
+<div class="aboutcopy">
+<div class="sectiontag">HM Auto Center</div><h2>Seu carro em <span>boas mãos.</span></h2>
+<p>Uma oficina focada em auto elétrica e mecânica automotiva, reunindo o trabalho de Hernandes, eletricista, e Mateus, mecânico.</p>
+<div class="checks"><div>Atendimento direto</div><div>Serviço automotivo</div><div>Auto elétrica</div><div>Mecânica geral</div></div>
+</div>
+</div></section>
+
+<section id="contato" class="contact"><div class="container">
+<div class="sectiontag">Agende seu atendimento</div><h2>Entre em <span>contato</span></h2>
+<div class="contactgrid">
+<div class="contactbox"><small>Eletricista</small><h3>Hernandes</h3><a href="https://wa.me/5531997741155" target="_blank">31 99774-1155</a></div>
+<div class="contactbox"><small>Mecânico</small><h3>Mateus</h3><a href="https://wa.me/5531984652034" target="_blank">31 98465-2034</a></div>
+<div class="contactbox"><small>Endereço</small><h3>Venha nos visitar</h3><p>Rua Jatobá, nº 32<br>Mário Campos - MG</p></div>
+<div class="contactbox"><small>Horário de funcionamento</small><h3>Estamos abertos</h3><p><strong>Segunda a sexta:</strong> 09:00 às 17:00<br><strong>Sábado:</strong> 09:00 às 12:00<br><strong>Domingo:</strong> Fechado</p></div>
+</div>
+<div style="margin-top:22px"><a class="btn red" href="https://www.google.com/maps/search/?api=1&query=Rua+Jatobá+32,+Mário+Campos,+MG" target="_blank">📍 Abrir no Google Maps</a></div>
+</div></section>
+
+<footer>© 2026 HM Auto Center • Auto Elétrica e Mecânica Automotiva • Mário Campos - MG</footer>
+<a class="float" href="https://wa.me/5531997741155" target="_blank" aria-label="WhatsApp">☏</a>
+</body></html>
